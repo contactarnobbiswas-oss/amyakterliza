@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Portfolio - Amy Akter Liza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #F4BA0E;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #171717;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    header {
+      background-color: #F4BA0E;
+      padding: 24px 0 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-brand {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #171717;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+    }
+
+    .home-btn {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #171717;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .home-btn:hover {
+      background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .hero-section {
+      padding: 28px 0 36px 0;
+    }
+
+    .title-main {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      color: #111111;
+    }
+
+    .student-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #1f1f1f;
+    }
+
+    .meta-box {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1f1f1f;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .meta-item span {
+      font-weight: 700;
+    }
+
+    .bio-text {
+      max-width: 760px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      font-weight: 400;
+      color: #262626;
+    }
+
+    .cards-section {
+      padding: 10px 0 40px 0;
+    }
+
+    .grid-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .card {
+      background: #FFFFFF;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      background: #000000;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .about-card {
+      padding: 32px 28px;
+    }
+
+    .about-card h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #171717;
+      margin-bottom: 16px;
+    }
+
+    .about-card p {
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: #3b3b3b;
+    }
+
+    .bottom-section {
+      padding: 16px 0 60px 0;
+    }
+
+    .section-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #2b2b2b;
+    }
+
+    @media (max-width: 768px) {
+      .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .title-main {
+        font-size: 1.7rem;
+      }
+
+      .about-card {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <header>
+    <div class="container nav-inner">
+      <a href="#top" class="site-brand">Amy Akter Liza</a>
+      <a href="#top" class="home-btn">Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="title-main">DIGITAL PORTFOLIO</h1>
+        <h2 class="student-name">AMY AKTER LIZA</h2>
+        
+        <div class="meta-box">
+          <div class="meta-item"><span>ID:</span> 0242220004081221</div>
+          <div class="meta-item"><span>PROGRAM:</span> BBA</div>
+          <div class="meta-item">Daffodil International University</div>
+        </div>
+
+        <p class="bio-text">
+          This website is a reflection of my academic journey, personal interests, learning experiences, and future aspirations.
+        </p>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <div class="container">
+        <div class="grid-layout">
+          <div class="card">
+            <div class="video-wrapper">
+              <iframe 
+                src="https://drive.google.com/file/d/1DQ0ueSdeZpKMihOT484eeWHmx_RP6TYY/preview" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div class="card about-card">
+            <h2>About me</h2>
+            <p>
+              I enjoy discovering new ideas, learning from experiences, and continuously working towards becoming a better version of myself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-section">
+      <div class="container">
+        <div class="section-label">MEET ME THROUGH MY VIDEO RESUME</div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
